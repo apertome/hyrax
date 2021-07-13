@@ -37,7 +37,7 @@ module Hyrax
     private
 
     def included(descendant)
-      method_name = (descendant < Hyrax::ValkyrieIndexer) ? :to_solr : :generate_solr_document
+      method_name = descendant < Hyrax::ValkyrieIndexer ? :to_solr : :generate_solr_document
       descendant.alias_method(:resource, :object)
       rules = @rules
       define_method method_name do |*args|

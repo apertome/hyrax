@@ -33,7 +33,7 @@ module Hyrax
     # Schedule an IngestJob for this file and the given file_set.
     #
     # @note This was extracted from the Hyrax::WorkUploadsHandler
-    # class.  The aspirational goal is a multi-step consideration:
+    #       class.  The aspirational goal is a multi-step consideration:
     #
     # - Reduce branching logic in the controller
     # - Reduce duplication of transaction steps
@@ -41,7 +41,7 @@ module Hyrax
     # @note This may only be applicable for a Valkyrie resource
     #
     # @todo Refactor to handle both an uploaded_file (current
-    # behavior) and handle a file assigned via BrowseEverything.
+    #       behavior) and handle a file assigned via BrowseEverything.
     #
     # @param file_set [FileSet]
     # @return [void]
